@@ -16,7 +16,8 @@ ENV OLLAMA_KEEP_ALIVE -1
 # COPY path/to/your/model/files /models
 
 # Store the model weights in the container image
-ENV MODEL gemma2:9b
+# Change the model name to your own AI model
+ENV MODEL gemma2:9b         
 RUN ollama serve & sleep 5 && ollama pull ${MODEL}
 
 # Start Ollama

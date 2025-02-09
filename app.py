@@ -26,7 +26,7 @@ response = requests.post(
         "prompt": "What makes the color white look white?",
         "stream": True      # set stream to False if you are testing response in your console
     },
-    # stream = False        # uncomment to set strean to False
+    # stream = False        # uncomment to set stream to False
 )
 
 # Uncommment the code below to print the response to console
